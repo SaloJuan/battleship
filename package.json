@@ -1,0 +1,29 @@
+{
+  "name": "battleship",
+  "version": "1.0.0",
+  "description": "Sea Battleship game",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaloJuan/battleship.git"
+  },
+  "author": "juan salomon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaloJuan/battleship/issues"
+  },
+  "homepage": "https://github.com/SaloJuan/battleship#readme",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
