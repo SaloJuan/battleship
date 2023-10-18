@@ -1,1 +1,26 @@
 5 tipos de nave, 5 tipos de longitud
+
+
+
+Para posicionar una nave, dependiendo de la longitud del ship, tengo que:
+    -   Elegir una celda al azar en el tablero y ponerle un 5 o algun valorq ue repesente que esta ocupada la celda. (5 barco, 7 hit empty ponele)
+    -   Guardar esa posicion en variables X e Y
+    -   Define a direction for the ship to be placed in
+    -   Fn that, using those X and Y coord and the direction to place in, effectively builds the ship there.  
+
+
+naves:
+Las naves se ponen en 2 posiciones nomas ,no hace falta que puedan girar 360°
+    1 LENGTH
+    2 length
+    3 length
+    4 length
+
+tablero:
+    1 > agua. Puede haber 1 nave
+    5 > nave. Deberia haber varios
+    7 > hit. No puede haber una nave
+
+
+
+SI LA NAVE ESTA EN UN BORDE Y MIDE MAS QUE 1 DE LENGTH Y LA DIRECCION NO PUEDE CONTNUAR XQ SE SALE DEL TABLERO, QUE VALIDE EN OTRAS DIRECCIONES. PROBABLEMENTE SEPARAR TODA ESTA LOGICA EN EL WHILE Y SWITCH EN UNA FN APARTE ONDA placeShipAccordingPos() o algo asi

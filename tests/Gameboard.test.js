@@ -1,21 +1,24 @@
 const Gameboard = require('../src/Gameboard.js');
+const Ship = require('../src/Ship.js');
 
-let testBoard = new Gameboard();
+let ship1 = new Ship(2);
 
-test.only('returning 1, 2, 3 or 4', ()=>{    
+let testBoard = new Gameboard([ship1]);
 
-    expect(testBoard.board).not.toBe(
-        [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
-        )
+test('creates board and chagnes it to place a ship', ()=>{    
+
+    expect(testBoard).toStrictEqual([[1,5,5,1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1,1,1,1],
+        [1,1,1,1,1,1,1,1,1,1]])
 
 
 })
 
 
-test('direction is 1, 2, 3 or 4', () =>{
-
-    expect(testBoard.shipsInitialPosition()).toHaveBeenCalled();
-
-     
-
-})
