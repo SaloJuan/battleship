@@ -4,7 +4,9 @@
   "description": "Sea Battleship game",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "webpack",
+    "run": "build"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/SaloJuan/battleship#readme",
   "devDependencies": {
+    "babel-jest": "^29.7.0",
+    "babel-loader": "^9.1.3",
     "css-loader": "^6.8.1",
     "style-loader": "^3.3.3",
     "webpack": "^5.89.0",

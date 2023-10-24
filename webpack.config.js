@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
 
-    entry: './src/index.js',
+    entry: './src/loop.js',
     output: {
 
         filename: 'main.js',
@@ -27,17 +27,7 @@ module.exports = {
         exclude: /node_modules/,
         use: {
             loader: 'babel-loader',
-            options: 
-            {
-                presets: [
-                ['@babel/preset-env', { targets: "defaults" }]
-                ],
-                transformIgnorePatterns: [
-                    "/node_modules/(?![@autofiy/autofiyable|@autofiy/property]).+\\.js$",
-                    "/node_modules/(?![@autofiy/autofiyable|@autofiy/property]).+\\.ts$",
-                    "/node_modules/(?![@autofiy/autofiyable|@autofiy/property]).+\\.tsx$",
-                ],
-            }
+            
         }
         }
         

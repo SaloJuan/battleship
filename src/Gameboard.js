@@ -1,7 +1,11 @@
 const Ship = require('../src/Ship.js');
+ 
 
 
 class Gameboard{
+    ship1 = new Ship(2);
+
+    
 
     board = 
     [
@@ -20,6 +24,8 @@ class Gameboard{
 
     constructor(ships){
 
+        
+
         this.placeShip(ships)
 
         return this.board;             
@@ -27,6 +33,8 @@ class Gameboard{
     }
 
     placeShip(shipsToPlace){
+
+        //this fn has to repaint the board according to where the ships are placed
 
         
         shipsToPlace.forEach(ship =>{
@@ -37,6 +45,28 @@ class Gameboard{
                 this.board[0][2] = 5;
             }
         })
+
+
+    }
+
+    receiveAttack(x,y,ship){
+
+        if(this.board[x][y] == 5){
+            console.log('a ship was hit at ' + x + ' ' + y);
+            
+            this.board[x][y] = 7;
+
+            //ship.length--
+        }
+
+        if(this.board[x][y] == 1){
+
+            console.log('WATER was hit at ' + x + ' ' + y);
+            
+            this.board[x][y] = 9;
+
+        }    
+        
 
 
     }
