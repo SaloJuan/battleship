@@ -1,0 +1,14 @@
+-   click edit mode
+-   some UI effect that indicates you are on edit mode
+-   user will have to place each ship starting from the largest to the smallest
+        Each 1 form the board array inside the board class instance, should create html and paint in the screen. hardcoded html sshould be replaced with this logic. 
+-   ship will be placed horizontally first and if user clicks on the already placed ship, it will change its orientation
+-   once the user is done, they'll have to click edit again to exit edit mode.
+
+
+
+
+usuario clickea una celda para poner el barco.
+la celda de la derecha, está libre? es decir, es un 1?
+  Si si, se ocupa ese lugar
+  Esto se repite hasta que se llegue al maxlength de la nave.

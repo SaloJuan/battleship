@@ -3,9 +3,8 @@ const Ship = require('../src/Ship.js');
 
 
 class Gameboard{
-    ship1 = new Ship(2);
 
-    
+    ship1 = new Ship(2);   
 
     board = 
     [
@@ -22,19 +21,19 @@ class Gameboard{
         [1,1,1,1,1,1,1,1,1,1]
     ] 
 
-    constructor(ships){
 
-        
+    
 
-        this.placeShip(ships)
+    constructor(){
 
-        return this.board;             
+        return this;             
 
     }
 
     placeShip(shipsToPlace){
 
         //this fn has to repaint the board according to where the ships are placed
+        //here should be 4 ifs, each for each ship length
 
         
         shipsToPlace.forEach(ship =>{
@@ -45,6 +44,8 @@ class Gameboard{
                 this.board[0][2] = 5;
             }
         })
+
+        
 
 
     }
