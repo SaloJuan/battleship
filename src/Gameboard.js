@@ -2,9 +2,9 @@ const Ship = require('../src/Ship.js');
  
 
 
-class Gameboard{
+class Gameboard{     
 
-    ship1 = new Ship(2);   
+    ships = [];
 
     board = 
     [
@@ -25,6 +25,13 @@ class Gameboard{
     
 
     constructor(){
+
+        // so far it makes sense for this to be hardcoded since every game will have all ships instanciated.
+        let ship1 = new Ship(3);
+        let ship2 = new Ship(2);
+
+        this.ships.push(ship1);
+        this.ships.push(ship2);
 
         return this;             
 

@@ -2,7 +2,7 @@ class Ship{
 
     length = 0;
 
-    coordinates = [0][0];
+    coordinates = [];
     
     hits = 0;
 

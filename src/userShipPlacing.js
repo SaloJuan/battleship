@@ -1,18 +1,8 @@
 
 
-function userShipPlacing(ship, cells){
+function userShipPlacing(ships, cells){
 
-    console.log(ship);
-
-    cells.forEach(cell =>{
-
-        cell.addEventListener('click', (ev) =>{
-
-            console.log('desde usershiplacing');
-        })
     
-    
-    })
     
     
     

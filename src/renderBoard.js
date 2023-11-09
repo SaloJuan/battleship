@@ -3,10 +3,7 @@ const shipsLeft = require('./shipsLeft.js')
 const boardContainer = document.querySelector('.board');
 
 
-function renderBoard(gameBoard){
-
-    console.log('rendering board');
-    console.log(gameBoard.board);
+function renderBoard(gameBoard){    
 
     let boardTable = document.createElement('table');
 
@@ -14,12 +11,12 @@ function renderBoard(gameBoard){
 
     boardContainer.appendChild(boardTable);
 
-    for (let i=0;i<gameBoard.board.length; i++){
+    /*for (let i=0;i<gameBoard.board.length; i++){
 
         let tableRow = document.createElement('tr');
 
         tableRow.classList.add('row-' + i);
-        //tableRow.classList.add('row')
+        //tableRow.classList.add('row')        
 
         boardTable.appendChild(tableRow);
 
@@ -35,9 +32,9 @@ function renderBoard(gameBoard){
 
 
         }
-    }
+    }*/
 
-    shipsLeft(gameBoard, boardContainer);
+    //shipsLeft(gameBoard, boardContainer);
 
 
 
