@@ -70,6 +70,8 @@ utilBtn.addEventListener('click', (ev) =>{
 
     console.log('|-UTILITY-| Ships status: |-UTILITY-|');
     console.log(gameBoard.ships);
+    console.log('test1');
+
 })
 
 
