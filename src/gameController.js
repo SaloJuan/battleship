@@ -54,6 +54,8 @@ editModeBtn.addEventListener('click', (ev) =>{
 
         console.log('Edit mode enabled, place your ships');
 
+        shipsLeft(gameBoard.ships);
+
     } else if ( editModeEnabled == true){
 
         editModeEnabled = false;
