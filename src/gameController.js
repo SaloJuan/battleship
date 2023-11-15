@@ -3,6 +3,7 @@ const Board = require('./Gameboard.js');
 const userShipPlacing = require('./userShipPlacing.js');
 const renderBoard = require('./renderBoard.js');
 const Gameboard = require('./Gameboard.js');
+const shipsLeft = require('./shipsLeft.js');
 
 const cells = document.querySelectorAll('.cell');
 const editModeBtn = document.querySelector('.place-ships');

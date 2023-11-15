@@ -1,20 +1,35 @@
+const shipsLeftElem = document.querySelector('.left-ships-container');
 
-
-function shipsLeft(gameBoard){
+function shipsLeft(leftShips){
 
     leftShips.forEach(ship =>{
 
-        let newLeftShipElem = document.createElement('div');
+        let newLeftShipDiv = document.createElement('div');
+        newLeftShipDiv.classList.add(`ship-${ship.length}`);
+
+        let newLeftShipPar = document.createElement('p');    
+        newLeftShipPar.textContent = `Left ship of ${ship.length} length`;
+
+        let newLeftShipBtn = document.createElement('button');
+        newLeftShipBtn.innerText = "Place this Ship"
+        newLeftShipBtn.classList.add('left-ship-btn');
+        newLeftShipBtn.id = ship.length;
+        newLeftShipBtn.addEventListener('click', (ev)=>{
+
+            console.log('placing ship');
+            console.log(ship)
+
+            userShipPlacing(newLeftShipBtn.id)
+
+        })
+
+        newLeftShipDiv.appendChild(newLeftShipPar);
+        newLeftShipDiv.appendChild(newLeftShipBtn);
+
+        shipsLeftElem.appendChild(newLeftShipDiv);    
+        shipsLeftElem.appendChild(document.createElement('br'));
+    
         
-        newLeftShipElem.classList.add(`ship-${ship.length}`);
-    
-        newLeftShipElem.innerHTML += `Left ship of ${ship.length} length`;
-    
-        shipsLeft.appendChild(newLeftShipElem);
-    
-        shipsLeft.appendChild(document.createElement('br'));
-    
-        //left
     })
 
 
